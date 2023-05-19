@@ -7,18 +7,20 @@
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /Herramientas-JM/"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/goitacademy/parcel-project-template.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Byron Poveda <byronpoveda2020@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "@parcel/bundler-default": "^2.8.3",
+    "modern-normalize": "^2.0.0"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
