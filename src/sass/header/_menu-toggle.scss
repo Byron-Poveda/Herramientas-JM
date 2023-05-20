@@ -7,7 +7,6 @@
   position: fixed;
   top: 0;
   right: 0;
-  overflow-y: auto;
   transform: translateX(120%);
   box-shadow: 0 0 8px $title-color-primary;
   &__wrap-close {
@@ -54,6 +53,10 @@
   height: 100%;
   transform: translateY(-100%);
   transition: all 0.25s ease-in-out;
+  &__item {
+    display: flex;
+    align-items: center;
+  }
   &__link {
     color: $title-color-primary;
     font-weight: 600;
@@ -75,14 +78,13 @@
   }
 }
 .mobile-search-box {
-  padding: 20px 24px 12px;
-  &__item:hover {
-    & .mobile-search-box__i {
+  padding: 20px;
+  transition: $transition;
+  &:hover {
+    background-color: $firs-color-ligthen;
+    & .mobile-search-box__i-search {
       color: $color-secondary;
       transition: $transition;
-    }
-    & .mobile-search-box__link {
-      color: $color-secondary;
     }
   }
 }
