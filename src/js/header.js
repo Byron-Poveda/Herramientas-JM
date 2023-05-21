@@ -8,6 +8,7 @@ const mobileInfoMenu = document.getElementById('mobile-dropdown-info-menu');
 const mobileNavInfoMenu = document.querySelector(
   '.mobile-nav-content--dropdown'
 );
+const LogoHeader = document.querySelector('.header__img');
 const mobileArrowInfo = document.querySelector('.mobile-nav__info-arrow');
 menuToggle.addEventListener('click', () => {
   menuNav.classList.toggle('is-openX');
@@ -28,4 +29,10 @@ mobileInfoMenu.addEventListener('click', () => {
   mobileNavInfoMenu.classList.toggle('mobile-is-openY');
   mobileNavInfoMenu.classList.toggle('hide');
   mobileArrowInfo.classList.toggle('rotate');
+});
+LogoHeader.addEventListener('mouseenter', () => {
+  LogoHeader.src = '/LogoHeaderHover.c239652c.png';
+});
+LogoHeader.addEventListener('mouseleave', () => {
+  LogoHeader.src = '/LogoHeader.22cf4bac.png';
 });
