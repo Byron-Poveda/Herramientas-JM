@@ -2,9 +2,9 @@ const btnLeft = document.querySelector('.carousels__btn--left'),
   btnRight = document.querySelector('.carousels__btn--right'),
   carousels = document.querySelector('.carousels'),
   carouselsSection = document.querySelectorAll('.carousels__section');
-let operation = 0,
-  cont = 0,
-  widthImg = 100 / carouselsSection.length;
+let operation = 0;
+let cont = 0;
+let widthImg = 100 / carouselsSection.length;
 setInterval(() => {
   moveToRight();
 }, 3000);
