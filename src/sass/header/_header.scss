@@ -5,11 +5,9 @@
     flex-direction: row;
     align-items: center;
     margin-top: 6px;
-    justify-content: space-between;
   }
   &__wrap {
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
   &__img-link {
@@ -21,24 +19,59 @@
   &__img {
     width: 55px;
     height: 55px;
+    margin-right: 10px;
   }
   &__list {
     display: flex;
     gap: 10px;
+    width: 100%;
+    justify-content: end;
   }
-  &__link-i {
-    width: 40px;
-    height: 40px;
+  &__item {
+    z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
+    &:hover {
+      .header__i-search {
+        color: $title-color-primary !important;
+      }
+    }
+  }
+  &__item--search {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  &__input-search {
+    width: 0;
+    height: 38px;
+    position: absolute;
+    right: 0px;
+    padding: 0 20px;
+    transition: $transition;
+    outline: none;
+    border: 1px solid $color-secondary;
+    border-radius: 30px;
+    z-index: -1;
+    background: transparent;
+  }
+  &__link-i {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-secondary-text;
+    border-radius: 50%;
   }
   &__i-account {
     font-size: 1.7rem;
   }
   &__menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
+    height: 40px;
+    width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -188,7 +221,8 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .nav {
     &__wrap {
-      margin-right: 20px;
+      margin-left: 22px;
+      margin-right: 10px;
     }
     &__item {
       padding-right: 5px;
@@ -219,5 +253,12 @@
   .header__img {
     width: 70px;
     height: 70px;
+  }
+  .header__container,
+  .header__wrap {
+    justify-content: space-between;
+  }
+  .header__img {
+    margin: 0;
   }
 }

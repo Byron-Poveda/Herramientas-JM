@@ -77,12 +77,12 @@
     }
   }
 }
-.mobile-search-box {
+.mobile-account-box {
   padding: 20px;
   transition: $transition;
   &:hover {
     background-color: $firs-color-ligthen;
-    & .mobile-search-box__i-search {
+    & .mobile-account-box__i {
       color: $color-secondary;
       transition: $transition;
     }
