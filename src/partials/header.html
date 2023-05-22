@@ -3,11 +3,13 @@
     <div class="header__wrap">
       <a href="#" class="header__img-link"
         ><img
-          width="70"
-          height="70"
           src="./images/LogoHeader.png"
           alt="Logo-JM"
-          class="header__img"
+          class="header__img logo-JM" />
+        <img
+          src="./images/LogoHeaderHover.png"
+          alt="Logo-JM"
+          class="header__img hide-img logo-JM-hover"
       /></a>
       <ul class="header__list">
         <li class="header__item">
@@ -74,13 +76,19 @@
     </nav>
     <div class="header-box">
       <ul class="header-box__list">
-        <li class="header-box__item">
+        <li class="header-box__item header-box__item--search">
+          <input
+            class="header-box__input-search"
+            type="text"
+            name="search"
+            placeholder="¿Que deseas buscar?"
+          />
           <a
             aria-label="noopener"
             href="#"
             rel="noopener noreferrer"
-            class="header-box__link-i"
-            ><i class="header-box__i ri-search-line ri-xl"></i>
+            class="header-box__link-i header-box__link-i--search"
+            ><i class="header-box__i header-box__i--search ri-search-line ri-2x"></i>
           </a>
         </li>
         <li class="header-box__item">
@@ -89,13 +97,12 @@
             href="#"
             rel="noopener noreferrer"
             class="header-box__link-i"
-            ><i class="header-box__i ri-account-circle-line ri-xl"></i>
+            ><i class="header-box__i ri-account-circle-line ri-2x"></i>
           </a>
         </li>
       </ul>
     </div>
   </div>
-  <img src="./images/LogoHeaderHover.png" alt="si soy" hidden />
 </header>
 <div class="mobile-menu js-menu-container">
   <div class="mobile-menu__wrap-close">

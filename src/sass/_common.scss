@@ -75,6 +75,10 @@ a {
   opacity: 0;
   pointer-events: none;
 }
+.hide-img {
+  display: none;
+  pointer-events: none;
+}
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
